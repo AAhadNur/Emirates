@@ -9,6 +9,9 @@ urlpatterns = [
 
     # base app urls
     path('', include('base.urls')),
+
+    # user app urls
+    path('user/', include('user.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
